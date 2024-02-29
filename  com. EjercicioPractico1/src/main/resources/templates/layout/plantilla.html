@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head th:fragment="head">
+        <title>Libreria</title>
+        <meta charset="UTF-8"/>
+        <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+        <link th:href="@{/webjars/font-awesome/css/all.css}" rel="stylesheet"/>
+        <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+        <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+        <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+    </head>    <body>        <header th:fragment="header" class="header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Libros</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Titulos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Autor</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Categoria
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Romance</a>
+                                <a class="dropdown-item" href="#">Terror</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Comedia</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">precio</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav> 
+            <h2 style="color:darkred">LIBRERIA</h2>
+            <div class="embed-responsive embed-responsive-16by9">
+                </style>
+                </head>
+                <body>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 video-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/q6WjHCyv1Fw?si=FpJq0XJOE-rV99Ak" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                            <div class="card-header">Header</div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Remember</h5>
+                                                <p class="card-text">This pague is only for find books.</p>
+                                            </div>
+                                        </div>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="card" style="width: 18rem;">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Muestra libro</h5>
+                                                            <p class="card-text">Bajo la misma estrella (The Fault in Our Stars) es un libro escrito por el estadounidense John Green (1977-) en el año 2012 y relata la historia de una adolescente de 16 años que padece de cáncer.
+
+                                                                Es una novela de literatura juvenil y también está considerada un libro de autoayuda. A través de la vida de una adolescente que enfrenta una enfermedad terminal como el cáncer, el libro enseña que la vida no es fácil pero siempre merece la pena vivir.</p>
+                                                        </div>
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item">Precio</li>
+                                                            <li class="list-group-item">Reseñas</li>
+                                                            <li class="list-group-item">ID: 1232434</li>
+                                                        </ul>
+                                                        <div class="card-body">
+                                                            <a href="#" class="card-link">https://www.culturagenial.com/es/libro-bajo-la-misma-estrella/</a>
+                                                            <a href="#" class="card-link">https://www.tokyvideo.com/es/video/bajo-la-misma-estrella-hd</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        </header>   
+
+                                        <footer th:fragment="footer" class="bg-info text-white mt-5 p-2"> 
+                                            <div class="container">   
+                                                <div class="col">     
+                                                    <p class="lead text-center">       
+                                                        &COPY [[#{Brenda}]] 
+                                                    </p>   
+                                                </div>     
+                                            </div>    
+                                        </footer>  
+                                        </body></html>

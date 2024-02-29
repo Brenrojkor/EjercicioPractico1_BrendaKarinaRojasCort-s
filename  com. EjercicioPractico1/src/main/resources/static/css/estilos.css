@@ -1,0 +1,44 @@
+/* Comentario */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+    padding: 80px 20px 0;
+    background-color: black;
+}
+header {
+    position: fixed;
+    background-color: beige;    
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 20px;
+    width: 100%;        
+    text-align: center;
+    background-color: brown;
+    color: azure;
+}
+
+.video-container {
+    text-align: center;
+}
+
+.card {
+    margin: 10px;
+}
+
+
+nav var{
+  position: fixed;
+ background-color: brown;  
+  color: azure;
+}
